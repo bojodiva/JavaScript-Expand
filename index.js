@@ -22,16 +22,17 @@ for(var i = 1; i <= 100; i++){
 //OR
 
 //here is where i don't know why the code doesn't work
+//i have resolved it now
 for(var i = 1; i <= 100; i++){
-  switch(i){
+  switch(true){
+    case (i % 3 == 0 && i % 5 == 0):
+      console.log("FizzBuzz")
+      break;
     case (i % 3 == 0):
       console.log("Fizz")
       break;
     case(i % 5 == 0):
       console.log("Buzz")
-      break;
-    case (i % 3 == 0 && i % 5 == 0):
-      console.log("FizzBuzz")
       break;
     default:
         console.log(i)
