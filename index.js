@@ -96,3 +96,25 @@ function countChar(str, a){
   return count;
 }
 console.log(countChar("kpk", "k"))
+
+
+
+
+
+//           CHAPTER FOUR
+
+// reversing an array(the function that returns a new array)
+function reverseArray(arr){
+  let newArr = [];
+  for(let i = arr.length - 1; i >= 0; i--){
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+console.log(reverseArray(["1", "2", "3"]));
+
+//reversing an array( the function in which the array passed as argument is only modified)
+function reverseArrayInPlace(arr){
+  return arr.reverse();
+}
+console.log(reverseArrayInPlace(["1", "2", "3"]));
