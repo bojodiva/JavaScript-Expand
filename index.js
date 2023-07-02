@@ -118,3 +118,11 @@ function reverseArrayInPlace(arr){
   return arr.reverse();
 }
 console.log(reverseArrayInPlace(["1", "2", "3"]));
+
+
+//Deep comparison
+function deepEqual(first, last){
+  if(first === last){
+if()
+}
+}
