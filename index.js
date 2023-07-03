@@ -126,3 +126,22 @@ function deepEqual(first, last){
 if()
 }
 }
+
+
+//the sum of a range
+function range(start, end){
+let arr = [];
+for(let i = start; i <= end; i++){
+  arr.push(i);
+}
+return arr;
+}
+
+
+function sum(values){
+let count = 0;
+for(let i = 0; i <= values.length; i++){
+count += values[i];
+}
+return count;
+}
