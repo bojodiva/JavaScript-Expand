@@ -136,6 +136,7 @@ for(let i = start; i <= end; i++){
 }
 return arr;
 }
+console.log(range(1, 10));
 
 
 function sum(values){
@@ -145,3 +146,15 @@ count += values[i];
 }
 return count;
 }
+console.log(sum([1, 2, 3]));
+
+// range with a step
+function extraRange(start, end, step){
+let newArr = [];
+for(let i = start; i <= end; i+step ){
+  newArr.push(i);
+}
+return newArr;
+}
+console.log(extraRange(1, 10, 2));
+console.log(extraRange(5, 1, -1))
