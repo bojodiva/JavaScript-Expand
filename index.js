@@ -151,7 +151,7 @@ console.log(sum([1, 2, 3]));
 // range with a step
 function extraRange(start, end, step){
 let newArr = [];
-for(let i = start; i <= end; i+step ){
+for(let i = start; i <= end; i += step ){
   newArr.push(i);
 }
 return newArr;
