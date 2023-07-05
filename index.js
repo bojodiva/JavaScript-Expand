@@ -141,7 +141,7 @@ console.log(range(1, 10));
 
 function sum(values){
 let count = 0;
-for(let i = 0; i <= values.length; i++){
+for(let i = 0; i < values.length; i++){
 count += values[i];
 }
 return count;
@@ -151,9 +151,13 @@ console.log(sum([1, 2, 3]));
 // range with a step
 function extraRange(start, end, step){
 let newArr = [];
+  if(step < 0){
+    for(let i = start; i >= end; i += step ){
+  newArr.push(i);
+}}else{
 for(let i = start; i <= end; i += step ){
   newArr.push(i);
-}
+}}
 return newArr;
 }
 console.log(extraRange(1, 10, 2));
