@@ -123,7 +123,16 @@ console.log(reverseArrayInPlace(["1", "2", "3"]));
 //Deep comparison
 function deepEqual(first, last){
   if(first === last){
-if()
+return true;
+if( typeof first == "object" && typeof last == "object"){
+for(let i = 0; i <= Object.key(first).length; i++){
+for(let j = 0; i <= Object.key(last).length; j++){
+if(Object.key(first)[i] === Object.key(last)[j]){
+return true; 
+}
+}
+}
+}
 }
 }
 
