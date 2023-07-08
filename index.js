@@ -41,7 +41,16 @@ for(var i = 1; i <= 100; i++){
 }
 
 //ChessBoard
-
+let result = "";
+for(let i = 1; i <= 8; i++){
+   if( i % 2 !== 0){
+     result +=" # # # #\n";
+   }else{
+     result += "# # # # \n";
+   }
+}
+console.log(result);
+  
 
 
 
