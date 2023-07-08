@@ -124,17 +124,29 @@ console.log(reverseArrayInPlace(["1", "2", "3"]));
 function deepEqual(first, last){
   if(first === last){
 return true;
-if( typeof first == "object" && typeof last == "object"){
-for(let i = 0; i <= Object.key(first).length; i++){
-for(let j = 0; i <= Object.key(last).length; j++){
-if(Object.key(first)[i] === Object.key(last)[j]){
-return true; 
+}
+
+if( typeof first === "object" && typeof last === "object"){
+let first_keys = Object.key(first);
+let last_keys = Object.key(last);
+
+if(first_keys.length !== last_keys.length){
+return false;
+}
+
+for(let i = 0; i <= first_keys.length; i++){
+   let key1 = first_keys[i];
+  for(let j = 0; j <= last_keys.length; j++){
+    let key2 = last_keys[j];
+    if(key1 !== key2){
+return false;
 }
 }
 }
 }
+ return true;
 }
-}
+
 
 
 //the sum of a range
