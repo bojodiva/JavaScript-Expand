@@ -149,10 +149,7 @@ for(let i = 0; i <= first_keys.length; i++){
     let key2 = last_keys[j];
     if(key1 !== key2){
 return false;
-}
-}
-}
-}
+}}}}
  return true;
 }
 
