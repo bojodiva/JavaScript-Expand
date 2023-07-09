@@ -136,8 +136,8 @@ return true;
 }
 
 if( typeof first === "object" && typeof last === "object"){
-let first_keys = Object.key(first);
-let last_keys = Object.key(last);
+let first_keys = Object.keys(first);
+let last_keys = Object.keys(last);
 
 if(first_keys.length !== last_keys.length){
 return false;
