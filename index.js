@@ -189,3 +189,15 @@ return newArr;
 }
 console.log(extraRange(1, 10, 2));
 console.log(extraRange(5, 1, -1))
+
+
+//converting array to list and vice versa
+
+function arrayToList(arr){
+let my_list = null;
+for(let i = arr.length - 1; i >= 0; i--){
+  my_list = {value: arr[i], rest: my_list}
+}
+return my_list;
+}
+console.log(arrayToList([1, 2, 3]));
