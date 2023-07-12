@@ -201,3 +201,18 @@ for(let i = arr.length - 1; i >= 0; i--){
 return my_list;
 }
 console.log(arrayToList([1, 2, 3]));
+
+
+
+
+
+//        CHAPTER FIVE
+
+let array = [[1, 2, 3], [4, 5], [6]];
+
+const flattenedArray = array.reduce((accumulator, current) => {
+    accumulator.concat(current);
+});
+
+console.log(flattenedArray);
+
