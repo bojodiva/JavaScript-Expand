@@ -203,6 +203,9 @@ return my_list;
 console.log(arrayToList([1, 2, 3]));
 
 
+function listToArray(listed){
+        }
+
 
 
 
