@@ -219,3 +219,7 @@ const flattenedArray = array.reduce((accumulator, current) => {
 
 console.log(flattenedArray);
 
+
+
+document.getElementsById
+querySelector
