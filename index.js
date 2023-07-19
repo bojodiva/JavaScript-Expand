@@ -204,7 +204,9 @@ console.log(arrayToList([1, 2, 3]));
 
 
 function listToArray(listed){
+return Array.from(listed);
         }
+console.log();
 
 
 
