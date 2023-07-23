@@ -213,6 +213,9 @@ console.log();
 
 //        CHAPTER FIVE
 
+
+//flattenedArray 
+
 let array = [[1, 2, 3], [4, 5], [6]];
 
 const flattenedArray = array.reduce((accumulator, current) => {
@@ -220,6 +223,14 @@ const flattenedArray = array.reduce((accumulator, current) => {
 });
 
 console.log(flattenedArray);
+
+
+
+//higher-order for loop
+function loop(n, condition, count){
+
+
+}
 
 
 
