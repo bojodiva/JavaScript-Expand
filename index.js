@@ -228,9 +228,12 @@ console.log(flattenedArray);
 
 
 //higher-order for loop
-function loop(n, condition, count){
+function loop(n, test, update, console.log){
 
-
+let start = n;
+let newValues = test(start);
+let newUpdatedValues = update(newValues);
+console.log(newUpdatedValues);
 }
 
 
