@@ -228,12 +228,11 @@ console.log(flattenedArray);
 
 
 //higher-order for loop
-function loop(n, test, update, console.log){
-
-let start = n;
-let newValues = test(start);
-let newUpdatedValues = update(newValues);
-console.log(newUpdatedValues);
+function loop(n, test, update, logFunction){
+  while(test(n)){
+   logFunction(n);
+   n = update(n);
+  }
 }
 
 

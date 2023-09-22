@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.whole--section{
+    width: 50%;
+    margin: 10px auto;
+}
+
+.heading--text{
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    animation-name: simple;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+@keyframes simple{
+    0%{color: blue;  left: 50px;}
+    25%{color: red; left: 25px;}
+    50%{color: yellow;left: 0px;}
+    75%{color: red; left: 25px;}
+    100%{color: blue; left: 50px;} 
+}
+
+.form{
+    margin-top: 100px;
+}
+
+.name{
+    /* transform: translateY(200px); */
+    /* transform: rotateZ(-40deg); */
+    position: absolute;
+    /* animation-name: able; */
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes able{
+   0%{ transform: translateX(-200px);}
+   /* 25%{transform: scale(-1);}
+   50%{transform: scale(0);}
+   75%{transform: scale(1);} */
+   100%{transform: translateX(2100px);}
+}
+
+
+.circle{
+   background-color: pink;
+   padding: 50px 0;
+   border-radius: 50px;
+   margin: 60px auto;
+   line-height: 0;
+   width: 100px;
+   cursor: pointer;
+   text-align: center;
+   color: white;
+   font-size: 20px;
+   transition: 1s, transform 1s ease-in-out;
+}
+
+.circle:hover{
+    background-color: salmon;
+    transform: rotate(360deg);  
+}
+
+
+.road{
+    background-color: grey;
+    width: 900px;
+    width: 50%;
+    margin: 10px auto;
+    height: 300px;
+    /* transform: rotateX(45deg); */
+}
+
+.motorbike{
+    /* position: absolute; */
+    width: 450px;
+    top: -50px;
+    animation-name: bike;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bike{
+    0%{transform: translateX(200px);}
+    100%{transform: translateX(700px);}
+}
